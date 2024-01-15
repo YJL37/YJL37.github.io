@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+    <link rel="icon" href="../Home page/Stars/S4.png" type="image/x-icon">
+    <script src="Ranking.js" defer></script>
+
+    <style>
+        body{
+            background-image: url('curtains.jpg');
+            background-size: 100% 100%;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: black;
+        }
+
+        header {
+            background-color: rgba(0, 0, 128, 0);
+            color: #fff;
+            text-align: center;
+            padding: 50px; /* Increased padding for a taller header */
+            position: relative; 
+            z-index: 2; /* Add this line to make sure it's on top of the image */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        img {
+            width: 100%;
+            height: 140%;
+            opacity: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; /* Set z-index to be behind the header */
+        }
+
+        h1{
+            text-align: center;
+            font-size: 40px
+        }
+
+        h3{
+            text-align: center;
+            margin-left: 1.2px
+        }
+
+        .podium {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            align-items: flex-end; /* Align the levels at the bottom */
+        }
+
+        .first {
+            height: 650px;
+            width: 350px;
+            background-color: white;
+        }
+
+        .second {
+            height: 600px;
+            width: 350px;
+            background-color: white;
+        }
+
+        .third {
+            height: 550px;
+            width: 350px;
+            background-color: white;
+        }
+
+        .fourth {
+            height: 500px;
+            width: 350px;
+            background-color: white;
+        }
+
+        .level {
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 0;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 18px;
+            color: #333; /* Text color */
+        }
+
+        h2 {
+            color: white;
+            position: absolute;
+            top: -50px; 
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+</head>
+<body>
+
+    <img src="top curtains.png" alt="Top Curtains" style = "opacity: 100%">
+
+    <header style = "z-index: 1;">
+        <h1>CI 2023-24 Homecoming</h1>
+        <nav>
+            <a href="../HomePage.html">Home</a>
+            <a href="../TBD/TBD.html">Dance Tickets</a>
+            <a href="../Credits/Credits.html">Credits</a>
+        </nav>
+    </header>
+
+    <div class="podium" style="margin-left: 100px; margin-right: 100px; margin-top: 350px;">
+        <div class="level third">
+            <h2 id="Third Place"></h2>
+            <img src = "spotlight.png" style = "top: -480px; height: 500px; z-index: 0;">
+            <h3 id="Score3" style="color: rgb(55, 120, 240);"></h3>
+            <h3 id="Tail3" style="color: cornflowerblue;"></h3>
+            <h3 id="Rubik3" style="color: cornflowerblue;"></h3>
+            <h3 id="Ramen3" style="color: cornflowerblue;"></h3>
+            <h3 id="Dance3" style="color: cornflowerblue;"></h3>
+            <h3 id="Singer3" style="color: cornflowerblue;"></h3>
+            <h3 id="Barbie3" style="color: cornflowerblue;"></h3>
+            <h3 id="CI3" style="color: cornflowerblue;"></h3>
+            <h3 id="Class3" style="color: cornflowerblue;"></h3>
+        </div>
+        <div class="level first">
+            <h2 id="First Place"></h2>
+            <img src = "spotlight.png" style = "top: -380px; height: 400px; z-index: 0;">
+            <h3 id="Score1" style="color: rgb(55, 120, 240)"></h3>
+            <h3 id="Tail1" style="color: cornflowerblue;"></h3>
+            <h3 id="Rubik1" style="color: cornflowerblue;"></h3>
+            <h3 id="Ramen1" style="color: cornflowerblue;"></h3>
+            <h3 id="Dance1" style="color: cornflowerblue;"></h3>
+            <h3 id="Singer1" style="color: cornflowerblue;"></h3>
+            <h3 id="Barbie1" style="color: cornflowerblue;"></h3>
+            <h3 id="CI1" style="color: cornflowerblue;"></h3>
+            <h3 id="Class1" style="color: cornflowerblue;"></h3>
+        </div>
+        <div class="level second">
+            <h2 id="Second Place"></h2>
+            <img src = "spotlight.png" style = "top: -430px; height: 450px; z-index: 0;">
+            <h3 id="Score2" style="color: rgb(55, 120, 240)"></h3>
+            <h3 id="Tail2" style="color: cornflowerblue;"></h3>
+            <h3 id="Rubik2" style="color: cornflowerblue;"></h3>
+            <h3 id="Ramen2" style="color: cornflowerblue;"></h3>
+            <h3 id="Dance2" style="color: cornflowerblue;"></h3>
+            <h3 id="Singer2" style="color: cornflowerblue;"></h3>
+            <h3 id="Barbie2" style="color: cornflowerblue;"></h3>
+            <h3 id="CI2" style="color: cornflowerblue;"></h3>
+            <h3 id="Class2" style="color: cornflowerblue;"></h3>
+        </div>
+        <div class="level fourth">
+            <h2 id="Fourth Place"></h2>
+            <img src = "spotlight.png" style = "top: -530px; height: 550px; z-index: 0;">
+            <h3 id="Score4" style="color: rgb(55, 120, 240)"></h3>
+            <h3 id="Tail4" style="color: cornflowerblue;"></h3>
+            <h3 id="Rubik4" style="color: cornflowerblue;"></h3>
+            <h3 id="Ramen4" style="color: cornflowerblue;"></h3>
+            <h3 id="Dance4" style="color: cornflowerblue;"></h3>
+            <h3 id="Singer4" style="color: cornflowerblue;"></h3>
+            <h3 id="Barbie4" style="color: cornflowerblue;"></h3>
+            <h3 id="CI4" style="color: cornflowerblue;"></h3>
+            <h3 id="Class4" style="color: cornflowerblue;"></h3>
+        </div>
+    </div>
+
+</body>
+</html>
