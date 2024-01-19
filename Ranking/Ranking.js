@@ -1,59 +1,59 @@
 // Define variables
 var G9 = {
     name: "Grade 9",
-    tail: 0,
-    rubik: 0,
+    hoolahoop: 0,
     ramen: 0,
     dance: 0,
     singer: 0,
+    dating: 0,
     barbie: 0,
     ci: 0,
     class: 0
 };
 
-G9.score = G9.tail + G9.rubik + G9.ramen + G9.dance + G9.singer + G9.barbie + G9.ci + G9.class;
+G9.score = G9.hoolahoop + G9.ramen + G9.dance + G9.singer + G9.dating + G9.barbie + G9.ci + G9.class;
 
 var G10 = {
     name: "Grade 10",
-    tail: 0,
-    rubik: 0,
+    hoolahoop: 0,
     ramen: 0,
     dance: 0,
     singer: 0,
+    dating: 0,
     barbie: 0,
     ci: 0,
     class: 0
 };
 
-G10.score = G10.tail + G10.rubik + G10.ramen + G10.dance + G10.singer + G10.barbie + G10.ci + G10.class
+G10.score = G10.hoolahoop + G10.ramen + G10.dance + G10.singer + G10.dating + G10.barbie + G10.ci + G10.class
 
 var G11 = {
     name: "Grade 11",
-    tail: 50,
-    rubik: 0,
+    hoolahoop: 0,
     ramen: 0,
     dance: 0,
     singer: 0,
+    dating: 0,
     barbie: 0,
     ci: 0,
     class: 0,
 };
 
-G11.score = G11.tail + G11.rubik + G11.ramen + G11.dance + G11.singer + G11.barbie + G11.ci + G11.class
+G11.score = G11.hoolahoop + G11.ramen + G11.dance + G11.singer + G11.dating + G11.barbie + G11.ci + G11.class
 
 var G12 = {
     name: "Grade 12",
-    tail: 0,
-    rubik: 0,
+    hoolahoop: 0,
     ramen: 0,
     dance: 0,
     singer: 0,
+    dating: 0,
     barbie: 0,
     ci: 0,
     class: 0,
 };
 
-G12.score = G12.tail + G12.rubik + G12.ramen + G12.dance + G12.singer + G12.barbie + G12.ci + G12.class
+G12.score = G12.hoolahoop + G12.ramen + G12.dance + G12.singer + G12.dating + G12.barbie + G12.ci + G12.class
 
 // Store variables in an array
 var gradeRanked = [G9, G10, G11, G12];
@@ -75,15 +75,10 @@ document.getElementById('Score2').innerText = "Total Score: " + secPlace.score
 document.getElementById('Score3').innerText = "Total Score: " + thiPlace.score
 document.getElementById('Score4').innerText = "Total Score: " + fouPlace.score
 
-document.getElementById('Tail1').innerText = "Tail Game: " + firPlace.tail
-document.getElementById('Tail2').innerText = "Tail Game: " + secPlace.tail
-document.getElementById('Tail3').innerText = "Tail Game: " + thiPlace.tail
-document.getElementById('Tail4').innerText = "Tail Game: " + fouPlace.tail
-
-document.getElementById('Rubik1').innerText = "Rubik's Contest: " + firPlace.rubik
-document.getElementById('Rubik2').innerText = "Rubik's Contest: " + secPlace.rubik
-document.getElementById('Rubik3').innerText = "Rubik's Contest: " + thiPlace.rubik
-document.getElementById('Rubik4').innerText = "Rubik's Contest: " + fouPlace.rubik
+document.getElementById('HoolaHoop1').innerText = "Hoola Hoop Contest: " + firPlace.hoolahoop
+document.getElementById('HoolaHoop2').innerText = "Hoola Hoop Contest: " + secPlace.hoolahoop
+document.getElementById('HoolaHoop3').innerText = "Hoola Hoop Contest: " + thiPlace.hoolahoop
+document.getElementById('HoolaHoop4').innerText = "Hoola Hoop Contest: " + fouPlace.hoolahoop
 
 document.getElementById('Ramen1').innerText = "Ramen-Eating Contest: " + firPlace.ramen
 document.getElementById('Ramen2').innerText = "Ramen-Eating Contest: " + secPlace.ramen
@@ -99,6 +94,11 @@ document.getElementById('Singer1').innerText = "Masked Singer: " + firPlace.sing
 document.getElementById('Singer2').innerText = "Masked Singer: " + secPlace.singer
 document.getElementById('Singer3').innerText = "Masked Singer: " + thiPlace.singer
 document.getElementById('Singer4').innerText = "Masked Singer: " + fouPlace.singer
+
+document.getElementById('Dating1').innerText = "Dating Competition: " + firPlace.dating
+document.getElementById('Dating2').innerText = "Dating Competition: " + secPlace.dating
+document.getElementById('Dating3').innerText = "Dating Competition: " + thiPlace.dating
+document.getElementById('Dating4').innerText = "Dating Competition: " + fouPlace.dating
 
 document.getElementById('Barbie1').innerText = "Barbie-Themed Outfits: " + firPlace.barbie
 document.getElementById('Barbie2').innerText = "Barbie-Themed Outfits: " + secPlace.barbie
