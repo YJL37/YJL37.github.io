@@ -75,10 +75,10 @@ document.getElementById('Score2').innerText = "Total Score: " + secPlace.score
 document.getElementById('Score3').innerText = "Total Score: " + thiPlace.score
 document.getElementById('Score4').innerText = "Total Score: " + fouPlace.score
 
-document.getElementById('HoolaHoop1').innerText = "Hoola Hoop Contest: " + firPlace.hoolahoop
-document.getElementById('HoolaHoop2').innerText = "Hoola Hoop Contest: " + secPlace.hoolahoop
-document.getElementById('HoolaHoop3').innerText = "Hoola Hoop Contest: " + thiPlace.hoolahoop
-document.getElementById('HoolaHoop4').innerText = "Hoola Hoop Contest: " + fouPlace.hoolahoop
+document.getElementById('HoolaHoop1').innerText = "Hula Hoop Contest: " + firPlace.hoolahoop
+document.getElementById('HoolaHoop2').innerText = "Hula Hoop Contest: " + secPlace.hoolahoop
+document.getElementById('HoolaHoop3').innerText = "Hula Hoop Contest: " + thiPlace.hoolahoop
+document.getElementById('HoolaHoop4').innerText = "Hula Hoop Contest: " + fouPlace.hoolahoop
 
 document.getElementById('Ramen1').innerText = "Ramen-Eating Contest: " + firPlace.ramen
 document.getElementById('Ramen2').innerText = "Ramen-Eating Contest: " + secPlace.ramen
