@@ -2,7 +2,7 @@
 var G9 = {
     name: "Grade 9",
     hoolahoop: 0,
-    ramen: 0,
+    ramen: 10,
     dance: 0,
     singer: 0,
     dating: 0,
@@ -16,7 +16,7 @@ G9.score = G9.hoolahoop + G9.ramen + G9.dance + G9.singer + G9.dating + G9.barbi
 var G10 = {
     name: "Grade 10",
     hoolahoop: 0,
-    ramen: 0,
+    ramen: 20,
     dance: 0,
     singer: 0,
     dating: 0,
@@ -30,7 +30,7 @@ G10.score = G10.hoolahoop + G10.ramen + G10.dance + G10.singer + G10.dating + G1
 var G11 = {
     name: "Grade 11",
     hoolahoop: 0,
-    ramen: 0,
+    ramen: 30,
     dance: 0,
     singer: 0,
     dating: 0,
@@ -44,7 +44,7 @@ G11.score = G11.hoolahoop + G11.ramen + G11.dance + G11.singer + G11.dating + G1
 var G12 = {
     name: "Grade 12",
     hoolahoop: 0,
-    ramen: 0,
+    ramen: 50,
     dance: 0,
     singer: 0,
     dating: 0,
