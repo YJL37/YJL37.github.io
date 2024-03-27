@@ -12,6 +12,29 @@ body {
      width: fit-content;
      margin: 0 auto;
      position: relative;
+     &.fire {
+        >.particle {
+           position: absolute;
+           background-color:rgba(255,193,7,0.5);
+           border-radius:40px;
+           border-top-right-radius:0px;
+           animation: fires 0.8s linear infinite;
+              transform:rotate(-45deg);
+           opacity:0;
+           &:before {
+              position: absolute;
+              content: '';
+              top:60%;
+              left:40%;
+              transform:translate(-50%,-50%);
+              width:50%;
+              height:50%;
+              border-radius:40px;
+              border-top-right-radius:0px;
+              background-color:rgba(251,140,0,0.5);
+           }
+        }
+     }
 }
  .slot-machine > img {
      display: block;
