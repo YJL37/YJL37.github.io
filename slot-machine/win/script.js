@@ -186,4 +186,83 @@ $('#btn-example1').click(function() {
    $('#example1 ul').playSpin({
      endNum: 7
   });
+  initAnimation()
 });
+
+function initAnimation() {
+    numMoney = 300
+    speedOffset = 10
+    speedRange = 5
+    numImages = 6
+    frameRate = 1000 / 30 // 30 frames per second
+    animationLength = 10000 // 10 seconds
+    
+    canvasContext = $('.rain')[0].getContext('2d')
+  
+    _.range(numMoney).forEach(function (index) {
+      
+      isOdd = index % 2 == 1
+      direction = 0;
+      if(isOdd)
+        direction = 1;
+      else
+        direction = -1;
+      
+      money = {
+        image: new Image(),
+        x: _.random(width),
+        y: _.random(-height * 1, -imageHeight),
+        angle: _.random(2 * Math.PI),
+        speed: speedOffset + _.random(speedRange),
+        currentFrame: 0,
+        direction: direction
+      }
+  
+      imageIndex = _.random(numImages)
+      // money.image.src = "https://dl.dropboxusercontent.com/u/58679421/make_it_rain_images/money_" + 
+      //   imageIndex + ".png"
+      money.image.src = "https://images.vexels.com/media/users/3/144032/isolated/preview/1f5414b9d04b71a4972208c035a7d278-stroke-dollar-bill-by-vexels.png"
+          // money.image.src = "https://bangbroschat.com/svg/coin.svg"
+      fallingMoney.push(money)
+    })
+  
+    interval = setInterval(function() {
+      draw()  
+    }, frameRate)
+    
+    setTimeout(function() {
+      endAnimation()
+    }, animationLength)
+  }
+  
+  function draw() {
+    clearWindow()
+    
+    fallingMoney.forEach(function(money, index) {
+      drawRotatedImage(money)
+      
+      money.currentFrame += 1
+      money.y += money.speed
+      money.angle += money.direction * 0.1
+      radius = money.direction * (10 + (index % 6))
+      money.x += Math.sin((money.currentFrame + index) / (2 * Math.PI)) * radius 
+    })
+  }
+                         
+  function clearWindow() {
+    canvasContext.clearRect(0, 0, width, height)
+  }
+    
+  function drawRotatedImage(money) {
+    canvasContext.save()
+    canvasContext.translate(money.x, money.y)
+    canvasContext.rotate(money.angle)
+    canvasContext.drawImage(money.image, 0, 0, 100, 100 * money.image.height / money.image.width)
+    canvasContext.restore()
+  }
+  
+  function endAnimation() {
+    clearInterval(interval)
+    fallingMoney = []
+    canvas.detach()
+  }
