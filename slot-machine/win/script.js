@@ -182,11 +182,9 @@ var slotMachine = function (el, options, track) {
     this.init();
 };
 
-$(document).ready(function() {
-    $('.slot-machine-btn').click(function() {
-        $(this).closest('.slot-machine').find('.slotwrapper ul').playSpin({
-            endNum: 7
-        });
-    });
+$('#btn-example1').click(function() {
+   $('#example1 ul').playSpin({
+     endNum: 7
+  });
 });
 
